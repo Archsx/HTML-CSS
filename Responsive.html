@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Document</title>
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.4.2/css/all.css" integrity="sha384-/rXc/GQVaYpyDdyxK+ecHPVYJSN9bmVFBvjA/9eOB+pb3F2w2N6fc5qB9Ew5yIns" crossorigin="anonymous">
+  <style>
+  body{
+    margin: 0;
+    padding: 0;
+    font-family: "montserrat",sans-serif
+  }
+  /* .services::before{
+    content: '';
+    display: table;
+  } */
+  .services{
+    background: #f1f1f1;
+    text-align: center
+  }
+  .services h1{
+    display: inline-block;
+    text-transform: uppercase;
+    border-bottom: 4px solid #3498db;
+    font-size: 20px;
+    padding-bottom: 10px;
+    margin-top: 40px;
+  }
+  .cen{
+    max-width: 1200px;
+    margin:  auto;
+    overflow: hidden;
+    padding: 20px;
+  }
+  .service{
+    display: inline-block;
+    /* float: left; */
+    width: calc(100% / 3);
+    /* width: 33.3%; */
+    margin: 0 -2px;
+    padding: 20px;
+    box-sizing: border-box;
+    cursor: pointer;
+    transition: 0.4s
+  }
+  .service:hover{
+    background: #ddd;
+  }
+  .service i{
+    color: #3498db;
+    font-size: 34px;
+    margin-bottom: 30px;
+  }
+  .service h2{
+    font-size: 18px;
+    text-transform: uppercase;
+    font-weight: 500;
+    margin: 0
+  }
+  .service p{
+    color: gray;
+    font-size: 15px;
+    font-weight: 500
+  }
+  @media screen and (max-width:992px){
+    .service{
+      width: 50%;
+    }
+  }
+  @media screen and (max-width:768px){
+    .service{
+      width: 100%;
+    }
+  }
+  </style>
+</head>
+<body>
+  <div class="services">
+    <h1>OUR SERVICES</h1>
+    <div class="cen">
+      <div class="service">
+          <i class="fas fa-anchor"></i>
+          <h2>Service Name</h2>
+          <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s </p>
+      </div>
+      <div class="service">
+          <i class="fab fa-android"></i>
+          <h2>Service Name</h2>
+          <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s </p>
+      </div>
+      <div class="service">
+          <i class="fab fa-alipay"></i>
+          <h2>Service Name</h2>
+          <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s </p>
+      </div>
+      <div class="service">
+          <i class="fab fa-aws"></i>
+          <h2>Service Name</h2>
+          <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s </p>
+      </div>
+      <div class="service">
+          <i class="fab fa-apple"></i>
+          <h2>Service Name</h2>
+          <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s </p>
+      </div>
+      <div class="service">
+          <i class="fas fa-atom"></i>
+          <h2>Service Name</h2>
+          <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s </p>
+      </div>
+    </div>
+  </div>
+</body>
+</html>
