@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Document</title>
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.4.2/css/all.css" integrity="sha384-/rXc/GQVaYpyDdyxK+ecHPVYJSN9bmVFBvjA/9eOB+pb3F2w2N6fc5qB9Ew5yIns" crossorigin="anonymous">
+  <style>
+    *{
+      margin: 0;
+      padding: 0;
+     font-family: sans-serif;
+    }
+    .con{
+      height: 100vh;
+      background: linear-gradient(rgba(0, 0,0, 0.9),rgba(0, 0,0, 0.9)),  url("https://i.loli.net/2018/10/29/5bd5faf948a60.jpeg") no-repeat;
+      background-size: cover;
+      position: relative;
+    }
+    .wrapper{
+      position: absolute;
+      left: 50%;
+      top: 50%;
+      transform: translate(-50%,-50%)
+    }
+    .wrapper h1{
+      color: #fff;
+      font-size: 40px;
+      border-bottom: 6px solid #009688;
+      display: inline-block;
+      padding-bottom: 10px;
+      margin-bottom: 20px;
+    }
+    .box{
+      border-bottom: 2px solid #ddd;
+      color: white;
+      font-size: 16px;
+    }
+    .box i{
+      margin-right: 10px;
+    }
+    .ipt{
+      padding: 15px 10px 15px 0px;
+      border: none;
+      background: transparent;
+      color: #fff;
+      outline: none;
+      width: 300px
+    }
+    .btn{
+      margin-top: 20px;
+      width: 100%;
+      padding: 10px;
+      border: 1px solid #009688;
+      background: transparent;
+      color: #fff;
+      cursor: pointer;
+    }
+
+  </style>
+</head>
+<body>
+  <div class="con">
+    <div class="wrapper">
+      <h1>Login</h1>
+      <div class="box">
+          <i class="fas fa-user-alt"></i>
+          <input class="ipt" type="text" placeholder="Username">
+      </div>
+      <div class="box">
+          <i class="fas fa-lock"></i>
+          <input class="ipt" type="password" placeholder="Password">
+      </div>
+      <button class="btn">Sign in</button>
+    </div>
+
+
+  </div>
+</body>
+</html>
