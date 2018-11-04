@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Cool Website</title>
+  <style>
+  *{
+    margin: 0;
+    padding: 0
+  }
+  .bg{
+    background:linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)),url("https://i.loli.net/2018/11/01/5bd9e7c624268.jpg") no-repeat;
+    background-size: cover;
+    height: 100vh;
+    background-position: center
+  }
+  .main-nav{
+    float: right;
+    list-style: none;
+    margin-top: 30px;
+  }
+  .main-nav li{
+    display: inline-block;
+    /* float: right */
+  }
+  .main-nav li a{
+    color: white;
+    text-decoration: none;
+    padding: 5px 20px;
+    font-family: "Roboto",sans-serif;
+    font-size: 15px;
+  }
+  .main-nav li.active a{
+    border: 1px solid white
+  }
+  .main-nav li a:hover{
+    /* border: 1px solid white; */
+    outline: 1px solid white;
+  }
+  .logo img{
+    width: 150px;
+    height: auto;
+    float: left
+  }
+  body{
+    font-family: monospace;
+  }
+  .row{
+    max-width: 1200px;
+    margin: auto;
+  }
+  .hero{
+    position: absolute;
+    width: 1200px;
+    margin-left: 0;
+    margin-top: 0;
+  }
+  h1{
+    color: white;
+    text-transform: uppercase;
+    font-size: 70px;
+    text-align: center;
+    margin-top: 275px;
+  }
+  .button{
+    margin-top: 30px;
+    margin-left: 440px;
+  }
+  .btn{
+    border:1px solid white;
+    padding: 10px 30px;
+    color: white;
+    text-decoration: none;
+    margin-right: 5px;
+    font-size: 13px;
+    text-transform: uppercase
+  }
+  .btn-one{
+    background-color: darkorange;
+    font-family: "Roboto",sans-serif
+  }
+  .btn-two{
+    font-family: "Roboto",sans-serif
+  }
+  .btn:hover{
+    background-color: darkorange;
+    transition: 0.5s ease-in
+  }
+  </style>
+</head>
+<body>
+  <div  class="bg">
+    <div class="row">
+      <div class="logo">
+        <img src="https://i.loli.net/2018/11/01/5bd9f980700de.png" alt="">
+      </div>
+      <ul class="main-nav">
+        <li class="active"><a href="">HOME</a></li>
+        <li class=""><a href="">SERVICES</a></li>
+        <li class=""><a href="">ABOUT</a></li>
+        <li class=""><a href="">CONTACT</a></li>
+        <li class=""><a href="">NEWS</a></li>
+        <li class=""><a href="">FAQ</a></li>
+      </ul>
+    </div>
+    <div class="hero">
+      <h1>Are You Ready?</h1>
+      <div class="button">
+        <a href="" class="btn btn-one">Watch Video</a>
+        <a href="" class="btn btn-two">Explore More</a>
+      </div>
+    </div>
+  </div>
+</body>
+</html>

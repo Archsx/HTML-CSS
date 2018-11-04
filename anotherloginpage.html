@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Document</title>
+  <style>
+    html{
+      height: 100%;
+    }
+    body{
+      margin: 0;
+      padding: 0;
+      background: linear-gradient(rgba(0, 0,0, 0.7),rgba(0, 0,0, 0.7)), url("https://i.loli.net/2018/11/02/5bdc4140d92b2.jpg") no-repeat;
+      background-size: cover;
+      background-position: center;
+      height:100%;
+      font-family: sans-serif
+    }
+    .card{
+      width: 320px;
+      height: 420px;
+      background: #000;
+      color: white;
+      position:absolute;
+      left: 50%;
+      top: 50%;
+      transform: translate(-50%,-50%);
+      padding: 50px 30px;
+      /* padding: 70px 30px; */
+      box-sizing: border-box
+      /* margin: 0 auto; */
+      /* margin-top: 100px; */
+    }
+    .avatar{
+      position: absolute;
+      left: 50%;
+      top: 0;
+      width: 100px;
+      height: 100px;
+      background: #ffffff;
+      transform: translate(-50%,-50%);
+      border-radius: 50%;
+      background-image: url("https://i.loli.net/2018/11/03/5bdd89a6df9e0.png");
+      background-size: cover;
+    }
+    h1{
+      text-align: center;
+      font-family: sans-serif;
+      font-size: 22px;
+      margin-top: 20px;
+    }
+    .wrapper{
+      margin: 20px 0;
+    }
+    .wrapper p{
+      font-weight: 600;
+      font-size: 16px;
+      margin-bottom: 0px;
+      font-family: sans-serif
+    }
+    .ipt{
+      width: 100%;
+      border:none;
+      outline: none;
+      border-bottom: 1px solid #f1f1f1;
+      padding: 10px 0;
+      box-sizing: border-box;
+      background: none;
+      color: white;
+      font-size: 16px;
+    }
+    .btn{
+      width: 100%;
+      border-radius: 1000px;
+      background-color: #fb2525;
+      cursor: pointer;
+      border: none;
+      padding: 10px 5px;
+      color: white;
+      font-size: 18px;
+      margin-bottom: 10px;
+      outline: none;
+    }
+    .rel::after{
+      content: "";
+      display: block;
+      clear: both;
+    }
+    .rel p{
+      font-size: 12px;
+      color: #757575;
+      cursor: pointer;
+      transition: 0.2s
+    }
+    .rel p:hover{
+      color: white;
+      transition: 0.2s
+    }
+    .left{
+      float: left;
+    }
+    .right{
+      float: right;
+    }
+  </style>
+</head>
+<body>
+  <div class="card">
+    <div class="avatar">
+    </div>
+    <h1>Login Here</h1>
+    <div class="wrapper">
+      <p>Username</p>
+      <input class="ipt" type="text" placeholder="Enter Username">
+    </div>
+    <div class="wrapper">
+      <p>Password</p>
+      <input class="ipt" type="password" placeholder="Enter Password">
+    </div>
+    <button class="btn">Login</button>
+    <div class="rel">
+      <p class="left">lost your password?</p>
+      <p class="right"> don't have a account?</p>
+    </div>
+  </div>
+</body>
+</html>  
