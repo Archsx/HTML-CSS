@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Navbar</title>
+  <style>
+    html,body{
+      width: 100%;
+      height: 100%;
+      margin: 0;
+      padding: 0
+    }
+    html{
+      font-family: Arial, Helvetica, sans-serif
+    }
+    .nav{
+      border-bottom: 1px solid #eaeaeb;
+      text-align: right;
+      height: 70px;
+      line-height: 70px;
+    }
+    .menu{
+      margin: 0 30px 0 0 ;
+    }
+    .menu a{
+      text-decoration: none;
+      color: gray;
+      margin: 0 10px;
+      line-height: 70px;
+      clear: right;
+      /* display: inline-block */
+    }
+    span{
+      color: #54d17a
+    }
+    label{
+      margin:0 40px 0 0 ;
+      font-size: 26px;
+      line-height: 70px;
+      display: none;
+      width: 26px;
+      float: right
+    }
+    #toggle{
+      display: none;
+    }
+    @media screen and (max-width: 768px) {
+      label{
+        display: block;
+        cursor: pointer;
+      }
+      .menu{
+        text-align: center;
+        width: 100%;
+        display: none;
+      }
+      .menu a{
+        display: block;
+        border-bottom: 1px solid #eaeaeb;
+        margin: 0
+      }
+      #toggle:checked + .menu{
+        display: block
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="nav">
+    <label for="toggle">&#9776;</label>
+    <input type="checkbox" id="toggle">
+    <div class="menu">
+      <a href="">Business</a>
+      <a href="">Service</a>
+      <a href="">Learn More</a>
+      <a href=""><span>Free Trial</span></a>
+
+    </div>
+
+
+  </div>
+</body>
+</html>

@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Document</title>
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU"
+    crossorigin="anonymous">
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+      font-family: sans-serif
+    }
+
+    nav {
+      width: 100%;
+      background: #00316b
+    }
+
+    ul {
+      width: 80%;
+      margin: 0 auto;
+      padding: 0;
+      transition: 0.5s
+    }
+
+    ul li {
+      list-style: none;
+      display: inline-block;
+      padding: 20px;
+    }
+
+    ul li:hover {
+      background: #e91e63;
+    }
+
+    ul li a {
+      color: white;
+      text-decoration: none
+    }
+
+    .toggle {
+      width: 100%;
+      padding: 10px 20px;
+      background: #001f44;
+      text-align: right;
+      box-sizing: border-box;
+      color: white;
+      font-size: 30px;
+      display: none;
+    }
+
+    @media screen and (max-width:768px) {
+      .toggle {
+        display: block
+      }
+      ul {
+        width: 100%;
+        display: none;
+        /* max-height: 0;
+        overflow: hidden;
+        transition: 0.5s */
+      }
+      ul.active{
+        display: block;
+        animation: slide 1s linear;
+      }
+      ul li {
+        display: block;
+        text-align: center;
+      }
+      ul li:hover{
+      background: #00316b
+      }
+    }
+    @keyframes slide {
+      0%{
+        opacity: 0;
+      }
+      100%{
+        opacity: 1
+      }
+    }
+  </style>
+</head>
+
+<body>
+  <nav>
+    <div class="toggle">
+      <i class="fas fa-bars menu"></i>
+    </div>
+    <ul>
+      <li>
+        <a href="">Home</a>
+      </li>
+      <li>
+        <a href="">About</a>
+      </li>
+      <li>
+        <a href="">Services</a>
+      </li>
+      <li>
+        <a href="">Portfolio</a>
+      </li>
+      <li>
+        <a href="">Contact</a>
+      </li>
+    </ul>
+  </nav>
+
+  <script>
+    window.onload = function () {
+      document.querySelector('.menu').addEventListener("click", function () {
+        // console.log(document.querySelector('ul').style.maxHeight)
+        if(document.querySelector('ul').classList.contains('active')){
+        document.querySelector('ul').classList.remove('active')
+        }else{
+        document.querySelector('ul').classList.add('active')
+        }
+        // document.querySelector('ul').style.maxHeight = document.querySelector('ul').style.maxHeight === "0px" ?
+        //   "100vh" : "0px"
+      })
+    }
+  </script>
+</body>
+
+</html>
